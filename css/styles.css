@@ -2,10 +2,11 @@ body {
   background-color: #61AE61;
   color: #D4D4D4;
   font-weight: bold;
+  user-select: none;
 }
 
 #bingo {
-  margin: 100px auto;
+  margin: 30px auto;
 }
 
 td {
@@ -18,4 +19,34 @@ td {
 thead > tr {
   color: #61AE61;
   font-style: italic;
+}
+
+.container {
+  text-align: center;
+}
+
+#num {
+  font-size: 48px;
+  margin: 0;
+  color: #053103;
+}
+
+#shuffle {
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #053103;
+  background-color: #D4D4D4;
+  border: none;
+  box-shadow: 0 3px #000;
+  user-select: none;
+  cursor: pointer;
+}
+
+#shuffle:active {
+  transform: translateY(3px);
+  box-shadow: none;
+  color: #D4D4D4;
+  background-color: #053103;
 }
